@@ -32,19 +32,19 @@
 
 Если вы действительно хотите установить Git из исходников, у вас должны быть установлены следующие библиотеки, от которых он зависит: autotools, curl, zlib, openssl, expat и libiconv. Например, если в вашей системе используется dnf (Fedora) или apt-get (системы на базе Debian), вы можете использовать одну из следующих команд для установки всех зависимостей, используемых для сборки и установки бинарных файлов Git:
 
-` ` `
+`
 $ sudo dnf install dh-autoreconf curl-devel expat-devel gettext-devel \
-  openssl-devel perl-devel zlib-devel
-$ sudo apt-get install dh-autoreconf libcurl4-gnutls-dev libexpat1-dev \
-  gettext libz-dev libssl-dev
-` ` `
+  openssl-devel perl-devel zlib-devel`
+
+`$ sudo apt-get install dh-autoreconf libcurl4-gnutls-dev libexpat1-dev \
+  gettext libz-dev libssl-dev`
 
 Для того, чтобы собрать документацию в различных форматах (doc, html, info), понадобится установить дополнительные зависимости:
 
-` ` `
-$ sudo dnf install asciidoc xmlto docbook2X
-$ sudo apt-get install asciidoc xmlto docbook2x
-` ` `
+`$ sudo dnf install asciidoc xmlto docbook2X`
+
+`$ sudo apt-get install asciidoc xmlto docbook2x`
+
 
 Если вы используете систему на базе Debian (Debian/Ubuntu/Ubuntu-производные), вам так же понадобится установить пакет install-info:
 
@@ -66,14 +66,19 @@ $ sudo dnf install getopt
 
 Затем скомпилируйте и установите:
 
-` ` `
-$ tar -zxf git-2.8.0.tar.gz
-$ cd git-2.8.0
-$ make configure
-$ ./configure --prefix=/usr
-$ make all doc info
-$ sudo make install install-doc install-html install-info
-` ` `
+
+`$ tar -zxf git-2.8.0.tar.gz`
+
+`$ cd git-2.8.0`
+
+`$ make configure`
+
+`$ ./configure --prefix=/usr`
+
+`$ make all doc info`
+
+`$ sudo make install install-doc install-html install-info`
+
 
 После этого вы можете получать обновления Git посредством самого Git:
 
