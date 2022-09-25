@@ -32,9 +32,9 @@
 
 Если вы действительно хотите установить Git из исходников, у вас должны быть установлены следующие библиотеки, от которых он зависит: autotools, curl, zlib, openssl, expat и libiconv. Например, если в вашей системе используется dnf (Fedora) или apt-get (системы на базе Debian), вы можете использовать одну из следующих команд для установки всех зависимостей, используемых для сборки и установки бинарных файлов Git:
 
-`
-$ sudo dnf install dh-autoreconf curl-devel expat-devel gettext-devel \
+`$ sudo dnf install dh-autoreconf curl-devel expat-devel gettext-devel \
   openssl-devel perl-devel zlib-devel`
+
 
 `$ sudo apt-get install dh-autoreconf libcurl4-gnutls-dev libexpat1-dev \
   gettext libz-dev libssl-dev`
